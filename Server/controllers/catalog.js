@@ -14,7 +14,7 @@ router.post('/', isUser(), async (req, res) => {
         price: req.body.price,
         img: req.body.img,
         material: req.body.material,
-        owner: req.user._id
+        _ownerId: req.user._id
     }
 
     try {
